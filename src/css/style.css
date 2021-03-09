@@ -1,0 +1,87 @@
+* {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: #dddddd;
+  vertical-align: middle;
+}
+
+body {
+  background-color: #222222;
+}
+
+header {
+  z-index: 1;
+}
+
+h1, h2, h1 *, h2 * {
+  font-weight: 100;
+}
+
+nav a, .dropdown {
+  background-color: #444444;
+  height: 2em;
+  line-height: 2em;
+}
+
+nav.mobile {
+  background-color: #444444;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+#menuicon {
+  z-index: 3;
+  cursor: pointer;
+}
+
+div#content {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#slide {
+  background-color: #666666;
+  transition: 0.3s;
+}
+
+#slide a {
+  background-color: transparent;
+}
+
+nav.mobile img {
+  cursor: pointer;
+}
+
+.dropdown {
+  transition: 0.3s;
+}
+
+input, button {
+  color: #222222;
+}
+
+div#content h3 {
+  color: #FF9933;
+  font-weight: 700;
+}
+
+.gen-unit-header {
+  font-size: 30px;
+}
+
+.home-unit h3 {
+  font-size: 45px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #dddddd;
+}​
