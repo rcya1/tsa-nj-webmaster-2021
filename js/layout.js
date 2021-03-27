@@ -104,6 +104,7 @@ function homeImages() {
   for (var i = 0; i < units.length; i++) {
     var source = units[i].getElementsByTagName("img")[0].src;
     units[i].style.backgroundImage = "url(\"" + source + "\")";
+    units[i].style.overflowY = "hidden";
   }
 }
 
