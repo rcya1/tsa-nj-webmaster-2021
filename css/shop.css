@@ -1,0 +1,42 @@
+#shop-options {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.shop-select {
+    color: #000;
+    font-size: 1.5rem;
+    height: 2.0rem;
+    width: 20rem;
+}
+
+#date-picker {
+    font-size: 0.9rem;
+    color: #000 !important;
+}
+
+#date-picker * {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    color: #000;
+    font-weight: 600;
+}
+
+#date-picker * span {
+    left: 25%;
+}
+
+.shop-select-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-select-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
