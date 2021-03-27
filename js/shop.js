@@ -64,7 +64,9 @@ function updateDoctorSelect(doctorSelect, service) {
 }
 
 function updateCalendar(calendar, doctor) {
-    console.log(calendar);
+    calendar.datepicker("option", "beforeShowDay", function(date) {
+        return [doctorData[doctor].days[date.getDay()], ""];
+    });
 }
 
 function updateTimeSelect(timeSelect, doctor) {
@@ -77,7 +79,8 @@ function updateTimeSelect(timeSelect, doctor) {
 }
 
 $(function() {
-    var calendar = $("#date-picker").datepicker();
+    var calendar = $("#date-picker");
+    calendar.datepicker();
     
     var serviceSelect = $("#service-select");
     var doctorSelect  = $("#doctor-select");

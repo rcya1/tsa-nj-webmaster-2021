@@ -4,6 +4,7 @@
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
+    flex-direction: row;
 }
 
 .shop-select {
@@ -13,20 +14,22 @@
     width: 20rem;
 }
 
-#date-picker {
-    font-size: 0.9rem;
-    color: #000 !important;
+.shop-input {
+    font-size: 1.5rem;
+    height: 2.0rem;
+    max-width: 15rem;
+    width: 60%;
 }
 
-#date-picker * {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    color: #000;
-    font-weight: 600;
+.schedule-appointment {
+    font-size: 1.5rem;
+    margin: auto auto !important;
+    height: 5rem;
 }
 
-#date-picker * span {
-    left: 25%;
+.ui-datepicker-current-day {
+    background-color: #000000;
+    color: #000000;
 }
 
 .shop-select-container {
@@ -40,3 +43,37 @@
     justify-content: space-between;
 }
 
+.ui-datepicker {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#date-picker {
+    font-size: 0.9rem;
+    color: #000 !important;
+}
+
+#date-picker *:not(.ui-datepicker) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    color: #000;
+    font-weight: 600;
+}
+
+#date-picker * span {
+    left: 25%;
+}
+
+@media (max-width: 900px) {
+    #shop-options {
+        flex-direction: column;
+    }
+
+    .ui-datepicker {
+        margin-top: 2rem;
+    }
+
+    .schedule-appointment {
+        margin-top: 2.0rem !important;
+    }
+}
