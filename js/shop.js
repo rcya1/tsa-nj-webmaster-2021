@@ -105,7 +105,11 @@ $(function() {
         let dateString = (selectedDate.getMonth() + 1) + "/" + selectedDate.getDate() + "/" + selectedDate.getFullYear();
 
         if(doctorData[doctorSelect.val()].days[selectedDate.getDay()] == 1) {
-            alert("You have scheduled an appointment with Dr. " + doctorSelect.val() + " at " + timeSelect.val() + " on " + dateString);
+            alert("You have scheduled an appointment with Dr. " + doctorSelect.val() + " at " + 
+                timeSelect.val() + " on " + dateString);
+        }
+        else {
+            alert("The currently selected date is not valid!");
         }
     });
 })
