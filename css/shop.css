@@ -64,7 +64,7 @@
     left: 25%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     #shop-options {
         flex-direction: column;
     }
@@ -75,5 +75,27 @@
 
     .schedule-appointment {
         margin-top: 2.0rem !important;
+    }
+}
+
+@media (max-width: 550px) {
+    .shop-select-row {
+        margin-bottom: 1.0rem;
+    }
+
+    .shop-select-row > label {
+        font-size: 1.0rem;
+    }
+
+    .shop-select-row > select {
+        font-size: 1.0rem;
+        max-width: 12.5rem;
+        width: 60%;
+    }
+
+    .shop-select-row > input {
+        font-size: 1.0rem;
+        max-width: 12.5rem;
+        width: 60%;
     }
 }

@@ -1,54 +1,54 @@
 var serviceData = {
     "diet": {
-        "Dr. Andrew Menendez": "menendez",
-        "Dr. Bob Dew": "dew",
-        "Dr. Patricia Fu": "fu",
-        "Dr. Tyler Brotski": "brotski",
+        "Dr. Andrew Menendez": "Menendez",
+        "Dr. Bob Dew": "Dew",
+        "Dr. Patricia Fu": "Fu",
+        "Dr. Tyler Brotski": "Brotski",
     },
     "counseling": {
-        "Dr. Susan He": "he",
-        "Dr. Bob Dew": "dew",
-        "Dr. Adam Smith": "smith",
-        "Dr. Tyler Brotski": "brotski",
+        "Dr. Susan He": "He",
+        "Dr. Bob Dew": "Dew",
+        "Dr. Adam Smith": "Smith",
+        "Dr. Tyler Brotski": "Brotski",
     },
     "remote": {
-        "Dr. Susan He": "he",
-        "Dr. Bob Dew": "dew",
-        "Dr. John Garcia": "garcia",
+        "Dr. Susan He": "He",
+        "Dr. Bob Dew": "Dew",
+        "Dr. John Garcia": "Garcia",
     },
     "healthcare": {
-        "Dr. Tyler Brotski": "brotski",
-        "Dr. John Garcia": "garcia",
-        "Dr. Adam Smith": "smith"
+        "Dr. Tyler Brotski": "Brotski",
+        "Dr. John Garcia": "Garcia",
+        "Dr. Adam Smith": "Smith"
     }
 };
 
 var doctorData = {
-    "menendez": {
+    "Menendez": {
         "days": [false, true, true, false, false, true, false],
         "time": ["9 AM", "11 AM", "1 PM", "4:30 PM"]
     },
-    "dew": {
+    "Dew": {
         "days": [false, true, false, false, true, true, false],
         "time": ["10 AM", "11 AM", "1 PM", "4 PM"]
     },
-    "fu": {
+    "Fu": {
         "days": [false, true, true, false, false, true, false],
         "time": ["9 AM", "12 PM", "1 PM", "4 PM"]
     },
-    "he": {
+    "He": {
         "days": [false, true, true, true, true, true, false],
         "time": ["9 AM", "10 AM", "1 PM", "5 PM"]
     },
-    "smith": {
+    "Smith": {
         "days": [false, false, true, false, true, false, false],
         "time": ["11 AM", "11 AM", "1 PM", "4:30 PM"]
     },
-    "brotski": {
+    "Brotski": {
         "days": [false, false, true, false, false, true, false],
         "time": ["11 AM", "12 PM", "1 PM"]
     },
-    "garcia": {
+    "Garcia": {
         "days": [false, true, true, false, true, true, false],
         "time": ["10 AM", "11 AM", "1 PM", "4:30 PM"]
     },
@@ -74,7 +74,7 @@ function updateTimeSelect(timeSelect, doctor) {
 
     timeSelect.empty();
     $.each(newOptions, function(index, value) {
-        timeSelect.append($("<option></option>").attr("value", index).text(value));
+        timeSelect.append($("<option></option>").attr("value", value).text(value));
     });
 }
 
@@ -97,5 +97,15 @@ $(function() {
     doctorSelect.on("change", function(e) {
         updateTimeSelect(timeSelect, doctorSelect.val());
         updateCalendar(calendar, doctorSelect.val());
+    });
+
+    var scheduleButton = $("#schedule-button");
+    scheduleButton.on("click", function(e) {
+        let selectedDate = calendar.datepicker("getDate");
+        let dateString = (selectedDate.getMonth() + 1) + "/" + selectedDate.getDate() + "/" + selectedDate.getFullYear();
+
+        if(doctorData[doctorSelect.val()].days[selectedDate.getDay()] == 1) {
+            alert("You have scheduled an appointment with Dr. " + doctorSelect.val() + " at " + timeSelect.val() + " on " + dateString);
+        }
     });
 })
