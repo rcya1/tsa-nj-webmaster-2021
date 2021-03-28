@@ -85,7 +85,7 @@ function slideNav(index) {
     }
     document.getElementsByTagName("nav")[1].getElementsByTagName("img")[index].src = document.getElementsByTagName("nav")[1].id + "/img/left.png";
     document.getElementById("slide").style.left = "200px";
-    document.getElementById("slide").style.width = "100px";
+    document.getElementById("slide").style.width = "200px";
     document.getElementById("slide").innerHTML = document.getElementsByTagName("nav")[0].getElementsByClassName("dropdown")[index].innerHTML;
     document.getElementById("absorber").style.left = "300px";
   } else {
