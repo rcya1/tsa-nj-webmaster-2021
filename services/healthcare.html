@@ -6,41 +6,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/layout.css"/>
-    <script type="text/javascript" src="js/layout.js"></script>
-    <title>TEMP</title>
+    <script type="text/javascript" src="../js/layout.js"></script>
+    <title>Soundwave</title>
   </head>
   <body onresize="orderNav(); genText();" onload="homeImages(); genText(); orderNav();">
     <header>
       <h1 class="mobile" id="menuicon" onclick="changeNav()">&#9776;</h1>
-      <h1><a href="../index.html">SoundWave</a></h1>
+      <h1><a href="../index.html">Soundwave</a></h1>
       <nav>
-        <a href ="index.html" class="left dropdowner" onmouseover="dropdown(0)">Services</a>
-        <a href ="../values/index.html" class="left dropdowner" onmouseover="dropdown(1)">Company Values</a>
-        <a href="../schedule/index.html" class="left">Schedule Appoinments</a>
-        <a href="../mailing/index.html" class="right">Mailing List</a>
-        <a href="../account/login.html" class="right">Log In</a>
-        <a href="../account/register.html" class="right">Register</a>
+        <a href ="../services/index.html" class="left dropdowner" onmouseover="dropdown(0)">Services</a>
+        <a href ="../values/index.html" class="left dropdowner" onmouseover="dropdown(1)">About Us</a>
+
+        <a href="index.html" class="right">Mailing List</a>
+        <a href="../schedule/index.html" class="right">Appointments</a>
         <div class="dropdown forzero">
-          <a href="diet.html">Diet Recommendations</a>
-          <a href="therapy.html">Therapy Sessions</a>
-          <a href="remote.html">Remote Monitoring</a>
-          <a href="healthcare.html">Healthcare Counseling</a>
+          <a href="../services/diet.html">Diet Recommendations</a>
+          <a href="../services/therapy.html">Therapy Sessions</a>
+          <a href="../services/remote.html">Remote Monitoring</a>
+          <a href="../services/healthcare.html">Healthcare Counseling</a>
         </div>
         <div class="dropdown forone">
           <a href="../values/mission.html">Mission</a>
           <a href="../values/privacy.html">Privacy Policy</a>
         </div>
       </nav>
-      <nav class="mobile" id=".">
+      <nav class="mobile" id="..">
         <div id="slide"></div>
         <div id="absorber" onclick="changeNav()"></div>
         <h2>Go to...</h2>
-        <div><a href="index.html">Services</a><img src="img/right.png" onclick="slideNav(0)" /></div>
-        <div><a href="../values/index.html">Company Values</a><img src="img/right.png" onclick="slideNav(1)" /></div>
-        <div><a href="../schedule/index.html">Schedule Appoinments</a></div>
-        <div><a href="../mailing/index.html">Mailing List</a></div>
-        <div><a href="../account/login.html">Log In</a></div>
-        <div><a href="../account/register.html">Register</a></div>
+        <div><a href="../services/index.html">Services</a><img src="img/right.png" onclick="slideNav(0)" /></div>
+        <div><a href="../values/index.html">About Us</a><img src="img/right.png" onclick="slideNav(1)" /></div>
+        <div><a href="index.html">Mailing List</a></div>
+        <div><a href="../schedule/index.html">Appointments</a></div>
       </nav>
     </header>
     <div id="content">
@@ -48,24 +45,26 @@
         <img src="../img/services/dietary.jpeg" />
         <div class="caption-wrapper">
           <div class="caption">
-            <h3>Our HealthCare Service</h3>
+            <h3>Our Healthcare Services</h3>
           </div>
         </div>
       </div>
       <div class="gen-unit-container">
         <div class="gen-unit left">
           <img src="../img/services/general.png">
-          <p><span class="gen-unit-header">Advice for the Healthcare Process</span><br/><br/>Each person’s health is unique, and we strive to connect 
-            the best medical professionals to every one of you to ensure you receive the best medical care possible. </p>
-          <p>The healthcare process can be a tricky road to navigate, 
+          <br><br>
+          <p><span class="gen-unit-header">Advice for the Healthcare Process</span><br/><br/>
+            Each person’s health is unique, and we strive to connect 
+            the best medical professionals to every one of you to ensure you receive the best medical care possible.
+            <br><br>
+            The healthcare process can be a tricky road to navigate, 
             and it is helpful to have professional advice by your side 
             as you determine the best path for you.
-            </p>
-            
-           <p> We aim to keep you as informed as possible as you make decisions that will affect 
+            <br><br>
+            We aim to keep you as informed as possible as you make decisions that will affect 
             your future health.
-          </p>
-          <p>The method of communication is based on your preference. Options 
+            <br><br>
+            The method of communication is based on your preference. Options 
             include video chat (recommended), voice call, email, or text.
           </p>
         </div>
