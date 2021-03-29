@@ -1,0 +1,101 @@
+#shop-options {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.shop-select {
+    color: #000;
+    font-size: 1.5rem;
+    height: 2.0rem;
+    width: 20rem;
+}
+
+.shop-input {
+    font-size: 1.5rem;
+    height: 2.0rem;
+    max-width: 15rem;
+    width: 60%;
+}
+
+.schedule-appointment {
+    font-size: 1.5rem;
+    margin: auto 1.5rem !important;
+    height: 5rem;
+}
+
+.ui-datepicker-current-day {
+    background-color: #000000;
+    color: #000000;
+}
+
+.shop-select-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-select-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ui-datepicker {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#date-picker {
+    font-size: 0.9rem;
+    color: #000 !important;
+}
+
+#date-picker *:not(.ui-datepicker) {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    color: #000;
+    font-weight: 600;
+}
+
+#date-picker * span {
+    left: 25%;
+}
+
+@media (max-width: 1200px) {
+    #shop-options {
+        flex-direction: column;
+    }
+
+    .ui-datepicker {
+        margin-top: 2rem;
+    }
+
+    .schedule-appointment {
+        margin: 2.0rem auto !important
+    }
+}
+
+@media (max-width: 550px) {
+    .shop-select-row {
+        margin-bottom: 1.0rem;
+    }
+
+    .shop-select-row > label {
+        font-size: 1.0rem;
+    }
+
+    .shop-select-row > select {
+        font-size: 1.0rem;
+        max-width: 12.5rem;
+        width: 60%;
+    }
+
+    .shop-select-row > input {
+        font-size: 1.0rem;
+        max-width: 12.5rem;
+        width: 60%;
+    }
+}
