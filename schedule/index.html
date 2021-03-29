@@ -6,7 +6,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/layout.css"/>
+    <link rel="stylesheet" href="../css/schedule.css"/>
+    
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
     <script type="text/javascript" src="../js/layout.js"></script>
+    <script type="text/javascript" src="../js/schedule.js"></script>
     <title>Soundwave</title>
   </head>
   <body onresize="orderNav(); genText();" onload="homeImages(); genText(); orderNav();">
@@ -43,6 +50,65 @@
       </nav>
     </header>
     <div id="content">
+      <div class="home-unit">
+        <!-- Temporary Image -->
+        <img src="../img/shop.jpg" /> 
+        <div class="caption-wrapper">
+          <div class="caption">
+            <h3>Schedule an Appointment</h3>
+            <p>Scroll down to schedule an appointment with a medical professional!</p>
+          </div>
+        </div>
+      </div>
+      <div class="gen-unit-container" style="min-height: 200px; height: auto;">
+        <div class="gen-unit right">
+          <img src="../img/transparent.png" class="transp" />
+          
+          <div id="shop-options">
+            <!-- <p></p> -->
+            <div class="shop-select-container">
+              <div class="shop-select-row">
+                <label for="appointment-type">Service</label>
+                <select name="appointment-type" id="service-select" class="shop-select">
+                  <option value="diet">Diet Recommendations</option>
+                  <option value="counseling">Therapy / Counseling</option>
+                  <option value="remote">Remote Monitoring</option>
+                  <option value="healthcare">Healthcare Advice</option>
+                </select>
+              </div>
+              
+              <div class="shop-select-row">
+                <label for="doctor-select">Doctor</label>
+                <select name="doctor-select" id="doctor-select" class="shop-select"></select>
+              </div>
+
+              <div class="shop-select-row">
+                <label for="time-select">Time</label>
+                <select name="time-select" id="time-select" class="shop-select"></select>
+              </div>
+
+              <div class="shop-select-row" style="margin-top: 1.5rem">
+                <label for="name-input">Full Name</label>
+                <input name="name-input" id="name-input" class="shop-input"></select>
+              </div>
+              <div class="shop-select-row">
+                <label for="name-input">Email Address</label>
+                <input name="name-input" id="email-input" class="shop-input"></select>
+              </div>
+              <div class="shop-select-row">
+                <label for="name-input">Phone Number</label>
+                <input name="name-input" id="phone-input" class="shop-input"></select>
+              </div>
+            </div>
+
+            <div id="date-picker"></div>
+
+            <div class="shop-select-row">
+              <button class="schedule-appointment" id="schedule-button">Schedule Appointment</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
