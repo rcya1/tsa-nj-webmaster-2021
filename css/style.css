@@ -88,4 +88,13 @@ div#content h3 {
 
 #title {
   font-weight: 300 !important;
+}
+
+#sources-list > li {
+  margin-bottom: 8px;
 }​
+
+.question {
+  width: 100%;
+  text-align: center;
+}

@@ -26,31 +26,31 @@ var serviceData = {
 var doctorData = {
     "Menendez": {
         "days": [false, true, true, false, false, true, false],
-        "time": ["9 AM", "11 AM", "1 PM", "4:30 PM"]
+        "time": ["9 AM EST", "11 AM EST", "1 PM EST", "4:30 PM EST"]
     },
     "Dew": {
         "days": [false, true, false, false, true, true, false],
-        "time": ["10 AM", "11 AM", "1 PM", "4 PM"]
+        "time": ["10 AM EST", "11 AM EST", "1 PM EST", "4 PM EST"]
     },
     "Fu": {
         "days": [false, true, true, false, false, true, false],
-        "time": ["9 AM", "12 PM", "1 PM", "4 PM"]
+        "time": ["9 AM EST", "12 PM EST", "1 PM EST", "4 PM EST"]
     },
     "He": {
         "days": [false, true, true, true, true, true, false],
-        "time": ["9 AM", "10 AM", "1 PM", "5 PM"]
+        "time": ["9 AM EST", "10 AM EST", "1 PM EST", "5 PM EST"]
     },
     "Smith": {
         "days": [false, false, true, false, true, false, false],
-        "time": ["11 AM", "11 AM", "1 PM", "4:30 PM"]
+        "time": ["11 AM EST", "11 AM EST", "1 PM EST", "4:30 PM EST"]
     },
     "Brotski": {
         "days": [false, false, true, false, false, true, false],
-        "time": ["11 AM", "12 PM", "1 PM"]
+        "time": ["11 AM EST", "12 PM EST", "1 PM EST"]
     },
     "Garcia": {
         "days": [false, true, true, false, true, true, false],
-        "time": ["10 AM", "11 AM", "1 PM", "4:30 PM"]
+        "time": ["10 AM EST", "11 AM EST", "1 PM EST", "4:30 PM EST"]
     },
 };
 
