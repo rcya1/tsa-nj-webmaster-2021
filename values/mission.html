@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/layout.css"/>
+    <script type="text/javascript" src="../js/layout.js"></script>
+    <title>Soundwave</title>
+  </head>
+  <body onresize="orderNav(); genText();" onload="homeImages(); genText(); orderNav();">
+    <header>
+      <h1 class="mobile" id="menuicon" onclick="changeNav()">&#9776;</h1>
+      <h1><a href="../index.html">Soundwave</a></h1>
+      <nav>
+        <a href ="../services/index.html" class="left dropdowner" onmouseover="dropdown(0)">Services</a>
+        <a href ="../values/index.html" class="left dropdowner" onmouseover="dropdown(1)">About Us</a>
+        <a href="../sources/index.html" class="left">Sources</a>
+
+        <a href="../mailing/index.html" class="right">Mailing List</a>
+        <a href="../schedule/index.html" class="right">Appointments</a>
+        <div class="dropdown forzero">
+          <a href="../services/diet.html">Diet Recommendations</a>
+          <a href="../services/therapy.html">Therapy Sessions</a>
+          <a href="../services/remote.html">Remote Monitoring</a>
+          <a href="../services/healthcare.html">Healthcare Counseling</a>
+        </div>
+        <div class="dropdown forone">
+          <a href="../values/mission.html">Mission</a>
+          <a href="../values/privacy.html">Privacy Policy</a>
+        </div>
+      </nav>
+      <nav class="mobile" id="..">
+        <div id="slide"></div>
+        <div id="absorber" onclick="changeNav()"></div>
+        <h2>Go to...</h2>
+        <div><a href="../services/index.html">Services</a><img src="../img/right.png" onclick="slideNav(0)" /></div>
+        <div><a href="../values/index.html">About Us</a><img src="../img/right.png" onclick="slideNav(1)" /></div>
+        <div><a href="../sources/index.html">Sources</a></div>
+        <div><a href="../mailing/index.html">Mailing List</a></div>
+        <div><a href="../schedule/index.html">Appointments</a></div>
+      </nav>
+    </header>
+    <div id="content">
+      <div class="home-unit">
+        <img src="../img/stethoscope.jpg" />
+          <div class="caption-wrapper">
+            <div class="caption">
+              <h3>Our Mission</h3>
+              <p style="font-weight: bold">
+                At the start of the COVID-19 pandemic, 
+                we recognized the need for remote medical services, and we established 
+                Soundwave to allow people to continue receiving medical assistance from 
+                afar during the pandemic. Our mission is to open up more 
+                opportunities for people to engage in virtual medical service, 
+                especially when they are unable to receive in-person medical aid.
+                We connect medical professional from around the country to patients in need.
+              </p>
+            </div>
+          </div>
+      </div>
+      <div class="gen-unit-container">
+        <div class="gen-unit right">
+          <p><span class="gen-unit-header"><h3 style="font-size: 30px; font-weight: 300; color: #dddddd">Staff</h3></span>
+            insert text here</p>
+        </div>
+      </div>
+      <div class="gen-unit-container" style="border-bottom: 0px; padding-bottom: 100px">
+        <p><span class="gen-unit-header">Frequently Asked Questions</span><br/><br/></p>
+        <h3>What does Soundwave offer?</h3>
+          <p>
+            We connect you with the best medical professionals in the nation!
+            You can check out the specific services we offer in the “Services” tab.
+          </p>
+        <h3>How do I use Soundwave?</h3>
+          <p>
+            Use the “Schedule Appointment” tab to book a date and time for an appointment. 
+            You can choose specific services and even request a specific doctor.
+          </p>
+        <h3>Where is Soundwave available?</h3>
+          <p>We are available all around the world!</p>
+        <h3>When is Soundwave available?</h3>
+          <p>Our services are available to our clients 24/7, 
+            but our office is open to general questions from 
+            9:00 AM to 5:00 PM every day of the week.
+          </p>
+        <h3>Can I request a specific doctor?</h3>
+          <p>
+            If that doctor is available, then you can request a specific doctor.
+          </p>
+      </div>
+      <div class="gen-unit-container" style="border-bottom: 0px; height: 100px"></div>
+    </div>
+  </body>
+</html>

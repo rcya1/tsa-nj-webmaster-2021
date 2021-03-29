@@ -73,7 +73,7 @@ div#content div * {
     width: calc(100vw - 210px);
   }
   nav > a, .dropdown > a {
-    width: calc((((100vw - 216px) / 7 - 8px) + 104px) / 2);
+    width: calc((((100vw - 216px) / 5 - 8px) + 104px) / 2);
     padding: 2px;
     margin: 2px;
   }
@@ -87,7 +87,7 @@ div#content div * {
     float: right;
   }
   .dropdown {
-    width: calc(((((100vw - 216px) / 7 - 8px) + 104px) / 2) + 4px);
+    width: calc(((((100vw - 216px) / 5 - 8px) + 104px) / 2) + 4px);
     margin: 0px;
     padding: 0px;
     position: fixed;
@@ -104,7 +104,7 @@ div#content div * {
     left: 206px;
   }
   .forone {
-    left: calc(((((100vw - 216px) / 7 - 8px) + 104px) / 2) + 214px);
+    left: calc(((((100vw - 216px) / 5 - 8px) + 104px) / 2) + 214px);
   }
   div.gen-title {
     margin: 0px;
@@ -174,7 +174,7 @@ div#content div * {
     width: calc(100vw - 210px);
   }
   nav > a, .dropdown > a {
-    width: calc((100vw - 216px) / 7 - 8px);
+    width: calc((100vw - 216px) / 5 - 8px);
     padding: 2px;
     margin: 2px;
   }
@@ -188,7 +188,7 @@ div#content div * {
     float: left;
   }
   .dropdown {
-    width: calc(((100vw - 216px) / 7 - 8px) + 4px);
+    width: calc(((100vw - 216px) / 5 - 8px) + 4px);
     margin: 0px;
     padding: 0px;
     position: fixed;
@@ -205,7 +205,7 @@ div#content div * {
     left: 206px;
   }
   .forone {
-    left: calc(((100vw - 216px) / 7 - 8px) + 214px);
+    left: calc(((100vw - 216px) / 5 - 8px) + 214px);
   }
   div.gen-title {
     margin: 0px;
@@ -244,7 +244,7 @@ div#content div * {
   }
   div.gen-bigboi img {
     height: 50% !important;
-    margin-top: calc((100vw - 16px) / 6);
+    margin-top: calc((100vw - 16px) / 5);
   }
   #shopimg {
     height: 25% !important;
