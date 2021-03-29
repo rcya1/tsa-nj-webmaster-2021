@@ -98,3 +98,36 @@ div#content h3 {
   width: 100%;
   text-align: center;
 }
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#footer-column-logo {
+  justify-content: center;
+}
+
+@media(max-width: 720px) {
+  #footer-column-logo {
+    display: none;
+  }
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-column > h3 {
+  font-size: 32px;
+}
+
+.footer-column > a {
+  margin-bottom: 8px;
+}
