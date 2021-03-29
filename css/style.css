@@ -84,4 +84,8 @@ div#content h3 {
 }
 ::-webkit-scrollbar-thumb {
     background: #dddddd;
+}
+
+#title {
+  font-weight: 300 !important;
 }​
