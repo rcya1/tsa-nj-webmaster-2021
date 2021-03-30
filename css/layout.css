@@ -21,11 +21,13 @@ div#content {
   position: fixed;
   top: 80px;
   left: 0px;
+  overflow-x: hidden;
 }
 
 div#content div * {
   margin-left: 12px;
   margin-right: 12px;
+  overflow-x: hidden;
 }
 
 .home-unit {
