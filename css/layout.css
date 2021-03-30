@@ -73,7 +73,7 @@ div#content div * {
     width: calc(100vw - 210px);
   }
   nav > a, .dropdown > a {
-    width: calc((((100vw - 216px) / 5 - 8px) + 104px) / 2);
+    width: calc((((100vw - 210px) / 5 - 10px) + 148px) / 2);
     padding: 2px;
     margin: 2px;
   }
@@ -87,7 +87,7 @@ div#content div * {
     float: right;
   }
   .dropdown {
-    width: calc(((((100vw - 216px) / 5 - 8px) + 104px) / 2) + 4px);
+    width: calc(((((100vw - 210px) / 5 - 10px) + 148px) / 2) + 4px);
     margin: 0px;
     padding: 0px;
     position: fixed;
@@ -104,7 +104,7 @@ div#content div * {
     left: 206px;
   }
   .forone {
-    left: calc(((((100vw - 216px) / 5 - 8px) + 104px) / 2) + 214px);
+    left: calc(((((100vw - 210px) / 5 - 10px) + 148px) / 2) + 214px);
   }
   div.gen-title {
     margin: 0px;
@@ -174,7 +174,7 @@ div#content div * {
     width: calc(100vw - 210px);
   }
   nav > a, .dropdown > a {
-    width: calc((100vw - 216px) / 5 - 8px);
+    width: calc((100vw - 210px) / 5 - 10px);
     padding: 2px;
     margin: 2px;
   }
@@ -188,7 +188,7 @@ div#content div * {
     float: left;
   }
   .dropdown {
-    width: calc(((100vw - 216px) / 5 - 8px) + 4px);
+    width: calc(((100vw - 210px) / 5 - 10px) + 4px);
     margin: 0px;
     padding: 0px;
     position: fixed;
@@ -205,7 +205,7 @@ div#content div * {
     left: 206px;
   }
   .forone {
-    left: calc(((100vw - 216px) / 5 - 8px) + 214px);
+    left: calc(((100vw - 210px) / 5 - 10px) + 214px);
   }
   div.gen-title {
     margin: 0px;
@@ -367,4 +367,3 @@ div#content div * {
     max-width: 85%;
   }
 }
-  
